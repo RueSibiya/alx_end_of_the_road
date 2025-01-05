@@ -1,49 +1,59 @@
 import React from "react";
-import Book1 from "../../assets/books/book2.jpg";
-import Book2 from "../../assets/books/book1.jpg";
-import Book3 from "../../assets/books/book3.jpg";
+import Book6 from "../../assets/books/book6.jpg";
+import Book7 from "../../assets/books/book7.jpg";
+import Book8 from "../../assets/books/book8.jpg";
+
+
+
 import Vector from "../../assets/website/blue-pattern.png";
 
 const ImageList = [
   {
-    id: 1,
-    img: Book1,
-    title: "His Life will forever be Changed",
+    id: 6,
+    img: Book6,
+    title: "Bea Baila",
     description:
-      "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
+      "She may be short and plump, but her dreams of dancing are as boundless as her spirit. Grace isn't in the size of the dancer—it's in the passion of the dance.",
+    author: "Luciano Lozano",
+    },
   {
-    id: 2,
-    img: Book2,
-    title: "Who's there",
+    id: 7,
+    img: Book7,
+    title: "I don't want to be quiet",
     description:
-      "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
+      "Stairs are for stomping, spoons are for drumming, tins are for clanging and balloons are for popping, my Mum really hates that but I'm not STOPPING.",
+    author: "Laura Ellen Anderson",
+    },
   {
-    id: 3,
-    img: Book3,
-    title: "Lost Boy",
+    id: 8,
+    img: Book8,
+    title: "I don't want curly hair",
     description:
-      "Lost Boy, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "I try using big books to weigh down the curls, but NO, it does NOTHING to flatten these TWIRLS.",
+    author: "Laura Ellen Anderson",
   },
 ];
 
 const Hero = ({ handleOrderPopup }) => {
-  const [imageId, setImageId] = React.useState(Book1);
-  const [title, setTitle] = React.useState("His Life will forever be Changed");
+  const [imageId, setImageId] = React.useState(Book6);
+  const [title, setTitle] = React.useState("Bea Baila");
+  const [author, setAuthor] = React.useState("Luciano Lozano");
   const [description, setDescription] = React.useState(
-    "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "She may be short and plump, but her dreams of dancing are as boundless as her spirit. Grace isn't in the size of the dancer—it's in the passion of the dance."
   );
-
+  
   const bgImage = {
     backgroundImage: `url(${Vector})`,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    // height: "100%",
     width: "100%",
   };
 
+  React.useEffect(() => {
+    console.log("Current author:", author);
+  }, [author]);
+  
   return (
     <>
       <div
@@ -65,8 +75,8 @@ const Hero = ({ handleOrderPopup }) => {
               >
                 {title}
                 <p class="bg-clip-text text-transparent bg-gradient-to-b from-primary text-right text-sm to-secondary">
-                  by Anonymous
-                </p>{" "}
+                   by {author}
+                </p>{""}
               </h1>
               <p
                 data-aos="slide-up"
@@ -81,18 +91,18 @@ const Hero = ({ handleOrderPopup }) => {
                   onClick={handleOrderPopup}
                   className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full"
                 >
-                  Order Now
+                  Download Now
                 </button>
               </div>
             </div>
-            {/* Image section */}
+          
             <div className="min-h-[450px] sm:min-h-[450px] flex justify-center items-center relative order-1 sm:order-2 ">
               <div className="h-[300px] sm:h-[450px] overflow-hidden flex justify-center items-center">
                 <img
                   data-aos="zoom-in"
                   data-aos-once="true"
                   src={imageId}
-                  alt="biryani img"
+                  alt="img"
                   className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-125 object-contain mx-auto"
                 />
               </div>
@@ -103,16 +113,16 @@ const Hero = ({ handleOrderPopup }) => {
                     data-aos-once="true"
                     src={item.img}
                     onClick={() => {
-                      setImageId(
-                        item.id === 1 ? Book1 : item.id === 2 ? Book2 : Book3
-                      );
+                      setImageId(item.img);
                       setTitle(item.title);
                       setDescription(item.description);
+                      setAuthor(item.author);
                     }}
-                    alt="biryani img"
+                    alt="img"
                     className="max-w-[100px] h-[100px] object-contain inline-block hover:scale-110 duration-200"
                   />
                 ))}
+
               </div>
             </div>
           </div>

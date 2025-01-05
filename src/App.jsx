@@ -11,6 +11,9 @@ import "aos/dist/aos.css";
 import OrderPopup from "./components/OrderPopup/OrderPopup.jsx";
 import Books from "./components/BooksSlider/Books.jsx";
 
+{/*import PdfReader from "./components/PdfReader/PdfReader.jsx";*/}
+
+
 const App = () => {
   const [orderPopup, setOrderPopup] = React.useState(false);
 
@@ -34,11 +37,9 @@ const App = () => {
       <Hero handleOrderPopup={handleOrderPopup} />
       <Services handleOrderPopup={handleOrderPopup} />
       <Banner />
-      {/* <CoverBanner /> */}
-      <AppStore />
-      {/* <PdfReader /> */}
       <Books />
       <Testimonial />
+      <AppStore />
       <Footer />
       <OrderPopup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
     </div>

@@ -35,30 +35,29 @@ const Footer = () => {
           <div className=" py-8 px-4 ">
             <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3">
               <img src={footerLogo} alt="Logo" className="max-w-[50px]" />
-              Books Store
+              Childrens Library
             </h1>
             <p className="">
-              Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Possimus, voluptate.{" "}
+              Free eBooks for the little ones. Video books coming soon...watch this space{" "}
             </p>
             <br />
             <div className="flex items-center gap-3">
               <FaLocationArrow />
-              <p>Noida, Uttar Pradesh</p>
+              <p>Harare, Zimbabwe</p>
             </div>
             <div className="flex items-center gap-3 mt-3">
               <FaMobileAlt />
-              <p>+91 123456789</p>
+              <p>+27 77 000 000</p>
             </div>
             {/* Social Handle */}
             <div className="flex items-center gap-3 mt-6">
-              <a href="#">
+              <a href="https://www.instagram.com/alpha_geek.c/">
                 <FaInstagram className="text-3xl" />
               </a>
-              <a href="#">
+              <a href="https://www.facebook.com/ruerue.maphosakarumbidza/">
                 <FaFacebook className="text-3xl" />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/ruvimbo-karumbidza-sibiya-7046681aa/">
                 <FaLinkedin className="text-3xl" />
               </a>
             </div>
@@ -115,7 +114,7 @@ const Footer = () => {
         </div>
         <div>
           <div className="text-center py-10 border-t-2 border-gray-300/50">
-            @copyright 2024 All rights reserved || Made with ❤️ by Dilshad
+            @copyright 2025 All rights reserved || Made with ❤️ by Ruvimbo Karumbidza
           </div>
         </div>
       </section>

@@ -21,7 +21,7 @@ const DarkMode = () => {
     <>
       <div className="relative ">
         <img
-          // src={theme === "dark" ? darkPng : lightPng}
+        
           src={lightPng}
           alt="dark"
           onClick={() =>

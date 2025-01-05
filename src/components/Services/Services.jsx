@@ -8,23 +8,23 @@ const ServicesData = [
   {
     id: 1,
     img: Img1,
-    title: "His Life",
+    title: "I love you just the way you are",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "A story of joyful and exuberant celebration of unconditional love",
   },
   {
     id: 2,
     img: Img2,
-    title: "Who's there",
+    title: "When Dragons are Dreaming",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Poor little Dragon just can't get to sleep, no matter how hard he tries.",
   },
   {
     id: 3,
     img: Img3,
-    title: "Lost Boy",
+    title: "My body belongs to me, head to toes",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Lessons on building confidence about accepting and rejecting physical contact from others",
   },
 ];
 
@@ -36,12 +36,11 @@ const Services = ({ handleOrderPopup }) => {
         <div className="container">
           <div className="text-center mb-20 max-w-[400px] mx-auto">
             <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary ">
-              Trending Books
+              Which Books are Trending Today?
             </p>
-            <h1 className="text-3xl font-bold">Best Books</h1>
+            <h1 className="text-3xl font-bold">Best Sellers</h1>
             <p className="text-xs text-gray-400">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis delectus architecto error nesciunt,
+              
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center">

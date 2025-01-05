@@ -2,43 +2,45 @@ import React from "react";
 import Book1 from "../../assets/books/book1.jpg";
 import Book2 from "../../assets/books/book2.jpg";
 import Book3 from "../../assets/books/book3.jpg";
+import Book4 from "../../assets/books/book4.jpg";
+import Book5 from "../../assets/books/book5.jpg";
 import { FaStar } from "react-icons/fa6";
 
 const booksData = [
   {
     id: 1,
     img: Book1,
-    title: "Who's there",
+    title: "When dragons are dreaming ",
     rating: 5.0,
-    author: "Someone",
+    author: "James Mayhew & Lindsey Gardiner",
   },
   {
     id: 2,
     img: Book2,
-    title: "His Life",
+    title: "I love you just the way you are",
     rating: 4.5,
-    author: "John",
+    author: "Tammi Salzano",
   },
   {
     id: 3,
     img: Book3,
-    title: "Lost boys",
+    title: "My body belongs to me",
     rating: 4.7,
-    author: "Lost Girl",
+    author: "Pro Familia",
   },
   {
     id: 4,
-    img: Book2,
-    title: "His Life",
+    img: Book4,
+    title: "La Cancion de les Nubes",
     rating: 4.4,
-    author: "Someone",
+    author: "Fortuna",
   },
   {
     id: 5,
-    img: Book1,
-    title: "Who's There",
+    img: Book5,
+    title: "El Dragon de las Estrellas",
     rating: 4.5,
-    author: "Someone",
+    author: "Muriel Bourgeios",
   },
 ];
 
@@ -50,12 +52,11 @@ const Books = () => {
           {/* header */}
           <div className="text-center mb-10 max-w-[600px] mx-auto">
             <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-              Top Books for you
+              Little Readers
             </p>
             <h1 className="text-3xl font-bold">Top Books</h1>
             <p className="text-xs text-gray-400">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis delectus architecto error nesciunt,
+            "Storytime Magic: Tales That Make Growing Up Amazing!"
             </p>
           </div>
 
